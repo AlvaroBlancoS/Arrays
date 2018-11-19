@@ -1,4 +1,4 @@
-package Simples;
+package CadenasCaracteres;
 
 import java.util.Scanner;
 

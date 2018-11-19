@@ -1,4 +1,4 @@
-package Simples;
+package CadenasCaracteres;
 
 public class ClaseStringBuilder2 {
 	public static String separarMiles(String s) {

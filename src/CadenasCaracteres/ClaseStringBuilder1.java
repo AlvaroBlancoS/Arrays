@@ -1,4 +1,4 @@
-package Simples;
+package CadenasCaracteres;
 
 public class ClaseStringBuilder1 {
 	public static void main(String[] args) {
