@@ -1,9 +1,9 @@
 package ArrayForEach;
 
-public class ForEachJava {
+public class Ordenacion {
 
 	public static void main(String[] args) {
-		// Inicialización
+		// InicializaciÃ³n
 		int[] arrayEjemplo = { 1, 2, 3, 4 };
 		boolean EstaOrdenado = true;
 		// Proceso
