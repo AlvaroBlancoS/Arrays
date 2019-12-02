@@ -1,0 +1,30 @@
+package ArrayFor;
+
+import java.util.Scanner;
+
+public class CuantasVocales {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String palabra = in.nextLine();
+		//palabra puede ser BoLi o boli o BOLI, porque no hemos hecho todavia toLowerCase();
+		int contadorVocal = cuantasVocales(palabra);
+		System.out.println(contadorVocal);
+		//System.out.println(cuantasVocales(palabra));
+	}
+	
+	static int cuantasVocales(String palabra) {
+		String dato = palabra.toLowerCase();
+		int contador = 0;
+		for(int x=0;x<dato.length();x++) {
+			  if ((dato.charAt(x)=='a') || (dato.charAt(x)=='e') || (dato.charAt(x)=='i') || (dato.charAt(x)=='o') || (dato.charAt(x)=='u')){			    
+				  contador++;
+			  }			
+			  
+		}
+		return contador;
+	}
+
+
+
+}
