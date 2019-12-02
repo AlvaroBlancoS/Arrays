@@ -1,0 +1,13 @@
+public class Intercambio {
+	public static void main(String[] args) {
+		int[] numeros = { 1, 4, 9, 7, 3, 2, 5, 11, 0, 9 };
+		int mitadDelArray = numeros.length / 2;
+		for (int i = 0; i < mitadDelArray; i++) {
+			// Es el contenedor del numero que sustituimos
+			int contenedor = numeros[i];
+			numeros[i] = numeros[mitadDelArray + i];
+			numeros[mitadDelArray + i] = contenedor;
+		}
+		System.out.println(Arrays.toString(numeros));
+	}
+}
