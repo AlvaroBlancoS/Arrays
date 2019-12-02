@@ -1,0 +1,31 @@
+package ArrayFor;
+
+public class SioNoOrdenado {
+
+	public static void main(String[] args) {
+		int[] listado1 = { 6, 2, 3, 1, 4, 5, 7 };
+		int[] listado2 = { 1, 2, 3, 4, 5, 6, 7 };
+		boolean isSort = false;
+		// Implementa una forma de saber si el array está ordenado o no
+		// Almacena el resultado en la variable isSort
+
+		for (int i = 0; i < listado2.length - 1; i++) {
+
+			System.out.println(listado2[i]);
+			System.out.println(listado2[i + 1]);
+			if (listado2[i] < listado2[i + 1]) {
+				System.out.println("paso por el if");
+				isSort = true;
+			} else {
+				System.out.println("paso por el else");
+				isSort = false;
+			}
+		}
+
+		if (isSort)
+			System.out.println("El vector está ordenado");
+		else
+			System.out.println("El vector NO está ordenado");
+	}
+
+}
