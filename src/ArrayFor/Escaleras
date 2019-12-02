@@ -1,3 +1,5 @@
+package ArrayFor;
+
 public class Escaleras {
 
 	public static void main(String[] args) {
