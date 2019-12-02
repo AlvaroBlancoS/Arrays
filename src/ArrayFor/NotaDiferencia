@@ -1,0 +1,46 @@
+package ArrayFor;
+import java.util.Scanner;
+public class Ejercicio1 {
+	int[] notas;
+	Scanner sc;
+
+	public static void main(String[] args) {
+		Ejercicio1 ejemplo = new Ejercicio1();
+		// Averigua cómo introducir un número en args[0] desde eclipse
+		int elementos = Integer.parseInt(args[0]);
+		// System.out.println(elementos);
+		ejemplo.pedirNotas(elementos);
+		ejemplo.calcularDiferencia(); 
+	}
+
+	public void pedirNotas(int cantidad) {
+		sc = new Scanner(System.in);
+		notas = new int[cantidad];
+		for (int i = 0; i < notas.length; i++) {
+			System.out.printf("Introduzca la nota del alumno %d: ", i + 1);
+			notas[i] = sc.nextInt();
+		}
+	}
+
+
+	public void calcularDiferencia() {
+		// Vamos a hacer un bucle for para hallar la nota mas alta
+		int notaMasAlta = 0; // No va a haber una nota mas alta que un cero
+		for (int i = 0; i < notas.length; i++) {
+			if (notas[i] > notaMasAlta) {
+				notaMasAlta = notas[i];
+			}
+		}
+		// Cuando acabe el bucle, ya tendremos guardada la nota mas alta
+		// Ahora hacemos lo mismo para la nota mas baja
+		int notaMasBaja = 10;
+		for (int i = 0; i < notas.length; i++) {
+			if (notas[i] < notaMasBaja) {
+				notaMasBaja = notas[i];
+			}
+		}
+
+		System.out.println("La diferencia es: " + (notaMasAlta - notaMasBaja));
+	}
+
+}
